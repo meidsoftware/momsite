@@ -1,0 +1,60 @@
+html {
+    font-family: 'Caveat', serif;
+    font-size: 30px;
+    background-color: #00539F;
+}
+body {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+h1 {
+    font-size: 60px;
+    text-align:center;
+    margin: 0;
+    color: #00539F;
+    text-shadow: 3px 3px 1px black;
+}
+h2 {
+    font-size: 55px;
+}
+h3 {
+    font-size: 50px;
+}
+h4 {
+    font-size: 45px;
+}
+h5 {
+    font-size: 40px;
+}
+ul {
+    color: rgb(231, 230, 218);
+    width: 300px;
+    border: 1px solid black;
+  }
+a {
+    color: rgb(21, 0, 255);
+}
+a:hover {
+    color: rgb(0, 255, 42);
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#oeuvres {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+#photograph {
+    margin: 0 auto;
+    max-width: 25%;
+    height: auto;
+}
