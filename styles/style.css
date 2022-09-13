@@ -1,55 +1,112 @@
 html {
-    font-family: 'Caveat', serif;
-    font-size: 30px;
-    background-color: #00539F;
+    font-family: 'Montserrat', serif;
+    font-size: 20px;
+    background-color: #585858;
+    margin: 0 auto;
+    padding: 0;
 }
 body {
-    width: 900px;
+    width: 80%;
     margin: 0 auto;
-    background-color: #FF9500;
-    padding: 0 20px 20px 20px;
-    border: 5px solid black;
+    background-color: black;
+    color: #d0c372e9;
 }
+
+nav, aside, footer {
+    background-color: rgb(59, 57, 57);
+    padding: 1%;
+}
+
+section {
+    padding: 1%;
+    margin: 1%;
+}
+
+#eidmi {
+    display: flex;
+}
+
+figure {
+    flex: 1;
+}
+
+aside {
+    flex: 2;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    padding: 0%;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    flex: 4;
+    display: flex;
+}
+  
+nav li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+}
+
+button {
+    flex: 1;
+    font-size: 1rem;
+    font-family: 'Montserrat', serif;
+    color: black;
+    background-color: #d0c372e9;
+}
+
+h1, h2, h3 {
+    color: #998a29a7;
+    text-shadow: 1px 1px 1px white;
+}
+
 h1 {
-    font-size: 60px;
+    font-family: 'Caveat', serif;
+    font-size: 3rem;
     text-align:center;
-    margin: 0;
-    color: #00539F;
-    text-shadow: 3px 3px 1px black;
 }
 h2 {
-    font-size: 55px;
+    font-size: 1.5rem;
 }
 h3 {
-    font-size: 50px;
+    font-size: 1rem;
 }
-h4 {
-    font-size: 45px;
+
+blockquote {
+    font-family: "Qwitcher Grypen";
+    font-size: 2rem;
 }
-h5 {
-    font-size: 40px;
-}
+
 ul {
-    color: rgb(231, 230, 218);
-    width: 300px;
-    border: 1px solid black;
-  }
+    font-size: 1rem;
+    font-family: 'Montserrat', serif;
+    color: #d0c372e9;
+}
+
 a {
-    color: rgb(21, 0, 255);
+    color: #d0c372e9;
 }
+
 a:hover {
-    color: rgb(0, 255, 42);
+    color: white;
 }
+
 img {
     display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
 }
 
 #oeuvres {
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
@@ -58,3 +115,8 @@ img {
     max-width: 25%;
     height: auto;
 }
+
+figcaption {
+    text-align: center;
+}
+

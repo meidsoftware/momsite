@@ -1,35 +1,87 @@
 <!DOCTYPE html>
-<!--This is a comment-->
-<html>
+<html lang="fr">
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
+        <meta name="author" content="meid'">
         <title>Mom l'aquarelliste</title>
         <link href="styles/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Qwitcher%20Grypen" type="text/css">
+        <link rel="icon" href="http://www.artsaintlaurent.ca/images/eids2sm%20.jpg" type="image/x-icon">
+        <script src="scripts/main.js" defer></script>
     </head>
+
     <body>
-        <button>Change user</button>
-        <p id=salutations>Salut cher visiteur</p>
-        <h1>Ma mère l'Aquarelliste</h1>
-        <h2>Bio</h2>
-        <p>Née en Belgique, mais demeurant au Québec depuis 1967, c’est à travers l’aquarelle que j'ai appris à connaître et à admirer les 
-        majestueux paysages de la province.<br><br>
-        Inspirée par les campagnes de l’Estrie et les montagnes de Charlevoix, ma peinture cherche à traduire autant des scènes de neige
-        chaleureuses que les couleurs vibrantes de l’automne.<br>
-        <h2>Expositions</h2>
-        <p><Prochaines expositionds</p>
-             <ul>
-               <li>Bromont - août 2022</li>
-               <li>New York - octobre 2022</li>
-               <li>Paris - décembre 2022</li>
-             </ul>
-        <h2>www</h2>
-        <p>Voici la page web de <strong>Sabine Martens Eid</strong>:<a href="https://www.sabineeid.com" title="Mom" target="_blank">site</a></p>
-        <h2>Principales oeuvres</h2>
-        <img id="oeuvres" src="http://www.artsaintlaurent.ca/images/eids2sm%20.jpg" alt="oeuvre">
-        <h2>Photographe</h2>
-        <img id="photograph" src="images/Face.png" alt="photographe">
-        <script src="scripts/main.js"></script>
+        <header>
+            <h1>Ma mère l'Aquarelliste</h1>
+        </header>
+    
+        <nav>
+            <ul>
+                <li><a href="index.html#expositions-section">Expositions</a></li>
+                <li><a href="index.html#oeuvres-section">oeuvres</a></li>
+                <li><a href="index.html#photograph-section">photograph</a></li>
+                <li><a href="contacts.html">contacts</a></li>
+            </ul>
+            <button>Change user</button>
+        </nav>
+
+        <main>
+            <section>
+                <h2>Notes de l'Artiste</h2>
+                <blockquote cite="https://www.sabineeid.com/bio">
+                <p>Née en Belgique, mais demeurant au Québec depuis 1967, c’est à travers l’aquarelle que j'ai appris à connaître et à admirer les 
+                majestueux paysages de la province.<br>
+                Inspirée par les campagnes de l’Estrie et les montagnes de Charlevoix, ma peinture cherche à traduire autant des scènes de neige
+                chaleureuses que les couleurs vibrantes de l’automne.<br></p>
+                </blockquote>
+            </section>
+
+            <section>
+                <h2>www</h2>
+                <p>Voici la <a href="https://www.sabineeid.com" title="Mom" target="_blank"> page web de <strong>Sabine Martens Eid</strong></a></p>
+            </section>
+
+            <section id=expositions-section>
+                <h2>Expositions</h2>
+                <p>Prochaines expositions</p>
+                <ul id=expositions>
+                    <li>Bromont - <time datetime="2022-08">août 2022</time></li>
+                    <li>New York - <time datetime="2022-10">octobre 2022</time></li>
+                    <li>Paris - <time datetime="2022-12">décembre 2022</time></li>
+                </ul>
+            </section>
+
+            <section id=oeuvres-section>
+                <h2>Principales oeuvres</h2>
+                <img id="oeuvres" src="http://www.artsaintlaurent.ca/images/eids2sm%20.jpg" alt="oeuvre">
+            </section>
+
+            <section id=photograph-section>
+                <h2>Photographe</h2>
+                <div id="eidmi">
+                    <figure>
+                        <img id="photograph" src="images/Face.png" alt="photographe">
+                        <figcaption>"Michel Eid"</figcaption>
+                    </figure>
+                    <aside>
+                        <h2>Michel Eid - Photographe</h2>
+                        <ul>
+                        <li><a href="www.meidsoftware.com" title="meidsoftware.com" target="_blank">Site Web</a></li>
+                        <li><a href="https://www.linkedin.com/in/michel-eid-16aa023/?originalSubdomain=ca" title="linkedIn" target="_blank">linkedIn</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p id=salutations>Visiteur: inconnu</p>
+            <p>©Copyright 2022 Michel Eid. Tous droits réservés.</p>
+        </footer>
+
     </body>
 </html>

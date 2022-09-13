@@ -12,23 +12,39 @@ let salutations = document.querySelector('#salutations');
 
 if (localStorage.getItem('name')) {
     const storedName = localStorage.getItem('name');
-    salutations.textContent = `Salut cher ${storedName}`;
+    salutations.textContent = `Visiteur: ${storedName}`;
   }  
 
 function setUserName() {
     const myName = prompt('Votre nom?');
     if (myName) {
       localStorage.setItem('name', myName);
-      salutations.textContent = `Salut cher ${storedName}`;
+      salutations.textContent = `Visiteur: ${storedName}`;
     }
     else {
-      salutations.textContent = `Salut cher visiteur`;
+      salutations.textContent = `Visiteur: inconnu`;
     }
-
   }
 
   myButton.onclick = () => {
     setUserName();
+  }
+
+  let expositions = document.querySelector("#expositions");
+
+  expositions.onclick = function() {
+    const listItem = document.createElement('li');
+    const listContent = prompt('Nouvelle exposition?');
+    if (listContent) {
+        listItem.textContent = listContent;
+        expositions.appendChild(listItem);
+      
+        listItem.onclick = function(e) {
+          e.stopPropagation();
+          const listContent = prompt("Changer "+listItem.textContent+" pour?");
+          this.textContent = listContent;
+        }
+    }
   }
   
   
