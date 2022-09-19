@@ -46,5 +46,18 @@ function setUserName() {
         }
     }
   }
+
+  let expo1 = document.querySelector("#août2021");
+  let expo2 = document.querySelector("#août2022");
+  let expovideo = document.querySelector("#past-expositions-videos");
+
+  expo1.onclick = function() {
+    expovideo.setAttribute('src',"videos/surfing.mp4");
+    expovideo.play();
+  }
+  expo2.onclick = function() {
+    expovideo.setAttribute('src',"videos/baseball.mp4");
+    expovideo.play();
+  }
   
   

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="meid'">
     <link href="styles/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat" type="text/css">
     <link rel="icon" href="images/Mom.png" type="image/x-icon">
     <title>Me rejoindre</title>
   </head>
@@ -20,7 +21,7 @@
         <ul>
             <li><a href="index.html#expositions-section">Expositions</a></li>
             <li><a href="index.html#oeuvres-section">oeuvres</a></li>
-            <li><a href="index.html#photograph-section">photograph</a></li>
+            <li><a href="photograph.html">photograph</a></li>
         </ul>
     </nav>
 
@@ -30,7 +31,16 @@
 
           <p><a href="#Mailing_address">L'adresse postale</a> se trouve en bas de la page.</p>
           <p><a href="mailto:eidsab34@gmail.com?bcc=michel_eid@live.com&subject=Demande%20d'%20information">Rejoindre par courriel</a></p>
-          <img id="photograph" src="images/Mom.png" alt="photographe">
+
+          <picture>
+            <source media="(max-width: 799px)" srcset="images/mom.png" />
+            <source media="(min-width: 800px)" srcset="images/mom-landscape.jpg" />
+            <img id="photograph" src="images/Mom.png" alt="Photo de Sabine Eid">
+          </picture>
+
+         <!-- <img id="photograph" src="images/Mom.png" alt="Photo de Sabine Eid"> -->
+
+          <img id="signature" src="images/eid.jpg" alt="signature" srcset="images/eid.svg" height="87" />
 
           <h3 id="Mailing_address">Adresse postale</h3>
           <address>
@@ -40,12 +50,12 @@
           Qc, H3P 2M1
           </address>
       </section>
-
-      <footer>
-        <p id=salutations>Visiteur: inconnu</p>
-        <p>©Copyright 2022 Michel Eid. Tous droits réservés.</p>
-      </footer>
     </main>
+
+    <footer>
+      <p id=salutations>Visiteur: inconnu</p>
+      <p>©Copyright 2022 Michel Eid. Tous droits réservés.</p>
+    </footer>
 
   </body>
 </html>

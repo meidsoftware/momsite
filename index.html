@@ -23,7 +23,7 @@
             <ul>
                 <li><a href="index.html#expositions-section">Expositions</a></li>
                 <li><a href="index.html#oeuvres-section">oeuvres</a></li>
-                <li><a href="index.html#photograph-section">photograph</a></li>
+                <li><a href="photograph.html">photograph</a></li>
                 <li><a href="contacts.html">contacts</a></li>
             </ul>
             <button>Change user</button>
@@ -43,13 +43,28 @@
             <section>
                 <h2>www</h2>
                 <p>Voici la <a href="https://www.sabineeid.com" title="Mom" target="_blank"> page web de <strong>Sabine Martens Eid</strong></a></p>
+                <iframe id="siteweb"
+                    src="https://www.sabineeid.com"
+                    width=80%
+                    height="400px"
+                    allowfullscreen>
+                </iframe>
             </section>
 
             <section id=expositions-section>
                 <h2>Expositions</h2>
-                <p>Prochaines expositions</p>
+                <h3>Dernières expositions</h3>
+                <div id="last-expo">
+                    <video id=past-expositions-videos src="videos/surfing.mp4" controls width="400" height="200" loop preload="auto" poster="images/sbart.png">
+                        <p>Your browser doesn't support HTML5 video. Here is a <a href="videos/surfing.mp4">link to the video</a> instead.</p> 
+                    </video>
+                    <ul id=past-expositions-list>
+                        <li id="août2021">Bromont - <time datetime="2022-08">août 2021</time></li>
+                        <li id="août2022">Bromont - <time datetime="2022-08">août 2022</time></li>
+                    </ul>
+                </div>
+                <h3>Prochaines expositions</h3>
                 <ul id=expositions>
-                    <li>Bromont - <time datetime="2022-08">août 2022</time></li>
                     <li>New York - <time datetime="2022-10">octobre 2022</time></li>
                     <li>Paris - <time datetime="2022-12">décembre 2022</time></li>
                 </ul>
@@ -58,25 +73,13 @@
             <section id=oeuvres-section>
                 <h2>Principales oeuvres</h2>
                 <img id="oeuvres" src="http://www.artsaintlaurent.ca/images/eids2sm%20.jpg" alt="oeuvre">
-            </section>
-
-            <section id=photograph-section>
-                <h2>Photographe</h2>
-                <div id="eidmi">
-                    <figure>
-                        <img id="photograph" src="images/Face.png" alt="photographe">
-                        <figcaption>"Michel Eid"</figcaption>
-                    </figure>
-                    <aside>
-                        <h2>Michel Eid - Photographe</h2>
-                        <ul>
-                        <li><a href="www.meidsoftware.com" title="meidsoftware.com" target="_blank">Site Web</a></li>
-                        <li><a href="https://www.linkedin.com/in/michel-eid-16aa023/?originalSubdomain=ca" title="linkedIn" target="_blank">linkedIn</a></li>
-                        </ul>
-                    </aside>
+                <p> Comparaison image versus graphic</p>
+                <div id="comparaison">
+                    <img id="raster" src="images/DSC00042.jpg" alt="A image version">
+                    <img id="vector" src="images/DSC00042_adobe_express.svg" alt="A vector graphic version">
                 </div>
             </section>
-        </main>
+         </main>
 
         <footer>
             <p id=salutations>Visiteur: inconnu</p>
