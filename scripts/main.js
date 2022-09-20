@@ -1,4 +1,4 @@
-let listeoeuvres = ['http://www.artsaintlaurent.ca/images/eids2sm%20.jpg', 'images/DSC_0517.JPG', 'images/DSC_0992.JPG', 'images/DSC00042.JPG']
+let listeoeuvres = ['http://www.artsaintlaurent.ca/images/eids2sm%20.jpg', 'images/DSC_0517.JPG', 'images/DSC_0992.jpg', 'images/DSC00042.jpg']
 const oeuvreCourante = document.querySelector('#oeuvres');
 let index = 0;
 
